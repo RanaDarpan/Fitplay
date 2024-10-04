@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background-color: #ffffff;
+  --text-color: #000000;
+}
+
+/* Dark mode */
+.dark {
+  --background-color: #1a202c;
+  --text-color: #f7fafc;
+}
+
+
+
+/* src/index.css */
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+* {
+  box-sizing: border-box;
+}
