@@ -91,7 +91,7 @@ const Progress = ({ updateActivityPoints }) => {
     if (dayIndex === 0 || updatedPlan[weekIndex].days[dayIndex - 1].completed) {
       // Only toggle the exercise if the day is not completed
       if (!updatedPlan[weekIndex].days[dayIndex].completed) {
-        setIsLoading(true); // Start loading
+        setIsLoading(true); 
         setNotification(""); // Clear previous notifications
 
         try {
@@ -273,8 +273,7 @@ const Progress = ({ updateActivityPoints }) => {
           }
         }
       } else if (completed === true) {
-        // If entire day is completed, no need to store separately
-        // (since we infer day completion from exercises)
+       
       }
 
       await updateDoc(userDocRef, {
@@ -349,7 +348,7 @@ const Progress = ({ updateActivityPoints }) => {
                                 : "bg-blue-500 text-white"
                             } py-1 px-3 rounded`}
                           >
-                            {isLoading ? "Updating..." : day.completed ? "Completed✅" : "❌ Complete Day"}
+                            {isLoading ? "Updating..." : day.completed ? "Done✅" : "❌ "}
                           </button>
                         ) : (
                           <span className="text-green-500 font-semibold">
