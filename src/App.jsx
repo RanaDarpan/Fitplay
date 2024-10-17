@@ -8,6 +8,7 @@ import Chatbot from './Components/Chatbot';
 import Points from './Components/Points';
 import Settings from './Components/Settings';
 import Sports from './Components/Sports';
+import About from './Components/About';
 import Leaderboard from './Components/Leaderboard';
 import { useState,useEffect } from 'react';
 
@@ -47,6 +48,7 @@ const App = () => {
         <Route path="/leaderboard" element={<Leaderboard />} />
         <Route path="/Dashboard" element={<Dashboard />} />
         <Route path="/profile" element={<Profile />} />
+        <Route path="/about" element={<About />} />
         <Route path="/chatbot" element={<Chatbot />} />
         <Route path="/points" element={<Points />} />
         <Route path="/settings" element={<Settings />} />
