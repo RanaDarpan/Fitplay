@@ -30,3 +30,11 @@
    ```bash
    git clone https://github.com/your-username/fitplay.git
    cd fitplay
+2. Install Dependencies :
+   ```bash
+   npm install 
+3. setup firebase
+4. Start development Server :
+   ```base
+   npm start 
+   
